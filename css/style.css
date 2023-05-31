@@ -1,27 +1,90 @@
 main {
     text-align: center;
+    margin: auto;
+    width: 23.5rem;
 }
 
-.tabuleiro div input {
+.tabuleiro div div {
     width: 100px;
     height: 100px;
     margin: 5px;
-    border: 1px solid rgb(66, 200, 253);
+    border: 6px solid rgb(255, 0, 0);
     border-radius: 6px;
-    font-size: 30px;
+    font-size: px;
     cursor: pointer;
+    background-color: white;
 }
 
 body {
     background-color: black;
 }
 
-h1, h2 {
-    font-size: 3rem;
+h1 {
+    font-size: 2.5rem;
     font-variant: small-caps;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
-.velha {
+h2 {
+    font-size: 2rem;
+    font-variant: small-caps;
+    color: rgb(0, 0, 0);
+}
+
+.velhajuju {
     position: fixed;
+    top: 130px;
+}
+
+.velhagigi {
+    margin-left: 1000px;
+    position: fixed;
+}
+
+body {
+    background-image: url(/image/fundo_jorel.webp);
+    background-size: 100%;
+}
+
+button {
+    border: none;
+    color: #fff;
+    background-image: linear-gradient(30deg, #0400ff, #4ce3f7);
+    border-radius: 20px;
+    background-size: 100% auto;
+    font-family: inherit;
+    font-size: 17px;
+    padding: 0.6em 1.5em;
+   }
+   
+   button:hover {
+    background-position: right center;
+    background-size: 200% auto;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse512 1.5s infinite;
+   }
+   
+   @keyframes pulse512 {
+    0% {
+     box-shadow: 0 0 0 0 #05bada66;
+    }
+   
+    70% {
+     box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+    }
+
+}
+
+.jorel {
+    width: 90px;
+    height: 95px;
+    margin-left: 10px;
+}
+
+.tabuleiro div{
+    display: flex;
+}
+
+.tabuleiro {
+    margin: auto;
 }
