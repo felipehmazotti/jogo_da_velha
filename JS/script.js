@@ -323,5 +323,11 @@ function verificaGanhador() {
         return;
     }
 
+    if(controle==0) {
+        lblJogador.innerText = 'JOGADOR X';
+    } else {
+        lblJogador.innerText= 'JOGADOR O';
+    }
+
     lblJogadas.innerText = '(' + ( jogadas+1) + ' + jogada)'
 }
