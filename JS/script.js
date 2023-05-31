@@ -329,5 +329,48 @@ function verificaGanhador() {
         lblJogador.innerText= 'JOGADOR O';
     }
 
-    lblJogadas.innerText = '(' + ( jogadas+1) + ' + jogada)'
+    lblJogadas.innerText = '(' + ( jogadas+1) + '  jogadas)'
+}
+
+// Click do botão Reiniciar
+function clickReiniciar() {
+     btn1 = 0;
+     btn2 = 0;
+     btn3 = 0;
+     btn4 = 0;
+     btn5 = 0;
+     btn6 = 0;
+     btn7 = 0;
+     btn8 = 0;
+     btn9 = 0;
+     controle = 0;
+     jogadas = 0;
+     finalJogo = false;
+
+    let b1 = document.getElementById('btn1');
+    let b2 = document.getElementById('btn2');
+    let b3 = document.getElementById('btn3');
+    let b4 = document.getElementById('btn4');
+    let b5 = document.getElementById('btn5');
+    let b6 = document.getElementById('btn6');
+    let b7 = document.getElementById('btn7');
+    let b8 = document.getElementById('btn8');
+    let b9 = document.getElementById('btn9');
+
+    b1.value = ' ';
+    b2.value = ' ';
+    b3.value = ' ';
+    b4.value = ' ';
+    b5.value = ' ';
+    b6.value = ' ';
+    b7.value = ' ';
+    b8.value = ' ';
+    b9.value = ' ';
+
+    // Reiniciar Label
+    let lblJogador = document.getElementById('lblJogador');
+    let lblJogadas = document.getElementById('lblJogadas');
+
+    lblJogador.innerText = 'Jogador X';
+    lblJogadas.innerText = '1° Jogada';
 }
