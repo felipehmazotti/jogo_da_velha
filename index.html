@@ -8,19 +8,29 @@
     <title>Jogo da Velha</title>
     <!-- link CSS -->
     <link rel="stylesheet" href="css/style.css">
-    <!-- link Java Script  -->
-    <script src="JS/script.js"></script>
-    
 </head>
 
 <body>
-    <img class="velhajuju" src="/image/juju.png">
-    <img class="velhagigi" src="image/gigi.png">
     <main>
         <section>
             <h1>JOGO DA VELHA</h1>
         </section>
-        <section class="tabuleiro">
+
+        <section id="containerPersonagens" class="containerPersonagens">
+            <h2>Selecione o <span id="ordemPersonagem">1º</span> personagem</h2>
+            <div>
+                <input type="button" value=" " id="perso1" onclick="clickPerso('bob_esponja')">
+                <input type="button" value=" " id="perso2" onclick="clickPerso('lula')">
+                <input type="button" value=" " id="perso3" onclick="clickPerso('patrick')">
+            </div>
+            <div>
+                <input type="button" value=" " id="perso4" onclick="clickPerso('plankton')">
+                <input type="button" value=" " id="perso5" onclick="clickPerso('Sand')">
+                <input type="button" value=" " id="perso6" onclick="clickPerso('siriquejo')">
+            </div>
+        </section>
+
+        <section class="tabuleiro" id="containerTabuleiro">
             <div onload="pisca();">
                 <div type="button" value=" " id="btn1" onclick="clickBtn1()"></div>
                 <div type="button" value=" " id="btn2" onclick="clickBtn2()"></div>
@@ -36,17 +46,23 @@
                 <div type="button" value=" " id="btn8" onclick="clickBtn8()"></div>
                 <div type="button" value=" " id="btn9" onclick="clickBtn9()"></div>
             </div>
-        </section>
-        <section>
-            <h2>
-                <span id="lblJogador">IRMÃO DO JOREL</span><br>
-                <span id="lblJogadas">(1º Jogada)</span>
-            </h2>
 
-            <button type="button" value="Reiniciar" id="btnReiniciar" onclick="clickReiniciar()"> REINICIAR
-            </button>
+            <section>
+                <h2>
+                    <span id="lblJogador">IRMÃO DO JOREL</span><br>
+                    <span id="lblJogadas">(1º Jogada)</span>
+                </h2>
+
+                <button type="button" value="Reiniciar" id="btnReiniciar" onclick="clickReiniciar()"> REINICIAR
+                </button>
+            </section>
         </section>
+
     </main>
+
+    <!-- link Java Script  -->
+    <script src="js/script.js"></script>
+
 </body>
 
 </html>
