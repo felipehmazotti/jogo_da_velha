@@ -92,3 +92,10 @@ button:hover {
 .tabuleiro {
     margin: auto;
 }
+
+.sirigtz {
+    width: 100px;
+    height: 100px;
+    margin-left:-300px;
+    margin-right: 100000px;
+}
